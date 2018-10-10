@@ -1,0 +1,127 @@
+/* ---- grid ---- */
+
+* {
+  box-sizing: border-box;
+}
+
+.cta-container {
+  display:table;
+  width: 100%;
+  height: 50%;
+}
+
+.cta-container p {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin:5px 0;
+}
+
+
+
+#container {
+  /*background: #EEE;*/
+  /* center */
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gutter-sizer {
+  width: 0.5%;
+}
+
+.item img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.demo-gallery {
+  padding-top: 25px;
+}
+.demo-gallery .item {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(256,256,256,0.5);
+    position: absolute;
+    top: 0;
+    left: 0; 
+    text-decoration: none;
+    color: #fff;
+    display: none;
+}
+
+
+.overlay .title {
+    text-align: center;
+    font-size: 18px;
+    background: #6d6d6d;
+    margin: 0px 0 5px;
+}
+
+.overlay .description {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+    width: 100%;
+    margin: 0;
+}
+
+.overlay .description a, .overlay .description a:visited {
+  color: #f8ede9;
+  text-decoration: none;
+  display:block;
+}
+
+.overlay .description a:hover {
+  color: #666666;
+}
+
+.overlay .description p {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+/*.overlay .description p {
+    margin: 10px;
+}*/
+
+.item:hover .overlay {
+    display: block;
+}
+.hentry header.entry-header{
+  display: none;
+}
+.entry-content {
+  margin-top: 30px;
+}
+.entry-content .list-unstyled .item {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 960px) {
+  .grid-sizer, .item {
+    width: 24%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-sizer, .item {
+    width: 49%;
+  }
+}
+
+.version_logo_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+p.gamc_overview {max-width: 100% !important;margin-left: auto;margin-right: auto;font-size: 15px;line-height: 1.5;}
+.gamc_ul ul li {margin-left: 3%;list-style: initial;line-height: 23px;}
